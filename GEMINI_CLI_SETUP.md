@@ -142,13 +142,13 @@ You can use the `gemini mcp add` command to quickly add this server to your sett
 Use the `--scope` flag to target the desired `settings.json` file (`user` for global, `project` for local).
 
 ```bash
-# Ensure run-mcp-atlassian.sh is in your PATH, then run:
+# cd to this repo root directory
 
 # To configure the global (user) settings:
-gemini mcp add atlassian --scope user run-mcp-atlassian.sh
+gemini mcp add atlassian --scope user $PWD/run-mcp-atlassian.sh
 
 # To configure the current project's settings:
-gemini mcp add atlassian --scope project run-mcp-atlassian.sh
+gemini mcp add atlassian --scope project $PWD/run-mcp-atlassian.sh
 ```
 
 This will generate the correct entry in your `settings.json` file.
