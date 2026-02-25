@@ -16,7 +16,7 @@ fi
 source "$VENV_DIR/bin/activate"
 
 echo "Installing/updating dependencies..." >&2
-pip install --quiet -e "$PROJECT_DIR"
+#pip install --quiet -e "$PROJECT_DIR"
 
 echo "Starting MCP Atlassian server..." >&2
 exec mcp-atlassian
